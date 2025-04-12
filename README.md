@@ -1,7 +1,7 @@
 # demo2025
 демка сетевое и системное администрирование 
 
----------------ISP-----------------------
+ISP
 nano /etc/network/interfaces
 auto ens192
 iface ens192 inet static
