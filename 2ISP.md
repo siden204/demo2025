@@ -22,3 +22,6 @@ iptables-save > /etc/iptables/rules.v4
 
 ![image](https://github.com/user-attachments/assets/74af8421-96f1-4c8f-8272-0b6477054cf7)
 
+Правила для HQ-RTR\
+iptables –t nat –A POSTROUTING –s 192.168.100.0/26 –o ens192 –j MASQUERADE  
+
