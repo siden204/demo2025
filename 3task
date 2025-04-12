@@ -1,0 +1,5 @@
+### Создание локальных учётных записей
+
+adduser sshuser -u 1010 -U
+passwd sshuser
+
