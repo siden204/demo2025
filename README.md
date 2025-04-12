@@ -83,7 +83,7 @@ iface ens192 inet static\
 
 
 
-###-------------------------BR-RTR---------------------
+### -------------------------BR-RTR---------------------
 
 nano  /etc/network/interfaces\
 auto ens192\
