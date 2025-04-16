@@ -51,14 +51,15 @@ iface ens224 inet static
 #iface ens224:100 inet static  
     #address 102.168.100.3  
     #netmask 255.255.255.240  
-#vlan-raw-device ens224:100  
+#vlan-raw-device ens224 
 
 #auto ens224:200  
 #iface ens224:200 inet static  
     #address 192.168.200.3  
     #netmask 255.255.255.240  
-#vlan-raw-device ens224:200  
+#vlan-raw-device ens224:1
 
+🖕
 
 ### --------------------HQ-SRV---------------------
 
