@@ -1,11 +1,31 @@
-### Создание локальных учётных записей
+### Создание учёток sshuser производится на HQ-SRV и BR-SRV
 
 adduser sshuser -u 1010 -U
 passwd sshuser
+P@ssw0rd
 
-Так же возможно понадобится выдать Root права для данных клиентов это можно выполнить посредством команды visudo\
-в открывшемся окне необходимо вписать изменения для каждой новой созданной учётной записи как показано на рисунке 10\
+ВЫДАЕМ ROOT права\
+user -aG sudo sshuser
 
-![image](https://github.com/user-attachments/assets/e562ec60-77a9-4a66-bc97-25298367b654)
+Добавляем следующую строку в /etc/sudoers:\
+sshuser ALL=(ALL) NOPASSWD:ALL
 
 
+Создаем и задаем необходимые права на домашнюю папку\
+mkdir /home/sshuser\
+chown sshuser:sshuser /home/sshuser\
+chmod 700 /home/sshuser
+
+
+### Пользователь net_admin на HQ-RTR и BR-RTR
+useradd net_admin
+passwd net_admin
+P@ssw0rd
+
+usermod -aG sudo net_admin
+
+net_admin ALL=(ALL) NOPASSWD :ALL
+
+mkdir /home/net_admin
+chown net_admin:net_admin /homenet_admin
+chmod 700 /home/net_admin
