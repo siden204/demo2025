@@ -12,6 +12,10 @@ HQ-SRV hostnamectl set-hostname hq-srv.au-team.irpo\
 BR-RTR hostnamect set-hostname br-rtr.au-team.irpo\
 BR-SRV hostnamectl set-hostname br-srv.au-team.irpo
 
+### сразу настроим время
+
+timedatectl set-timezone Asia/Tomsk
+
 ### -----ISP----
 
 nano /etc/network/interfaces
