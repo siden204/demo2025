@@ -16,6 +16,7 @@ mkdir /home/sshuser\
 chown sshuser:sshuser /home/sshuser\
 chmod 700 /home/sshuser
 
+----------------------------------------------
 
 ### Пользователь net_admin на HQ-RTR и BR-RTR
 useradd net_admin
