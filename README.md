@@ -113,4 +113,7 @@ iface eth0 inet static\
     netmask 255.255.255.224\
     gateway 192.168.0.1\
 
-
+на всех устройствах чекать файл\
+nano /etc/sysctl.conf\
+nano /etc/apt/sources.list
+nano /etc/resolv.4
